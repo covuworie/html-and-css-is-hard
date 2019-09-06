@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selectors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page">
+            <h1>CSS Selectors</h1>
+
+            <p class="synopsis">CSS selectors let you <em>select</em> individual HTML elements in an HTML document. This is <strong>super</strong> useful.</p>
+        
+            <p>Classes are ridiculously important, since they allow you to select arbitrary boxes in your web pages.</p>
+        
+            <p>We’ll also be talking about links in this example, so here’s <a href='https://internetingishard.com'>Interneting Is Hard</a> for us to style.</p>
+        
+            <div class="button">Button One</div>
+            <!-- These result in the same rendered page -->
+            <!--<div class='button call-to-action'>Button Two</div>-->
+            <div class='call-to-action button'>Button Two</div>
+
+            <a id='button-2' class='button' href='nowhere.html'>Button Two</a>
+
+            <!--IDs should be reserved for URLs and not used for CSS You do not want to create a dependency between your website's URLs and your CSS styles.-->
+            <!-- From the same page -->
+            <a href='#button-2'>Go to Button Two</a>
+
+            <!-- From a different page -->
+            <!--<a href='selectors.html#button-2'>Go to Button Two</a>-->
+
+            <div class='sidebar'>
+                <p>If this page had a sidebar...</p>
+                <p>We’d have some problems with pseudo-classes.</p>
+            </div>
+        </div>
+
+    </body>
+</html
